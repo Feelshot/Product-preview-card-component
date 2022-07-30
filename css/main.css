@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,300;9..144,700&family=Montserrat:wght@300;500;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #f2ebe3; }
+
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+main section {
+  display: flex;
+  border-radius: 20px;
+  width: 560px;
+  height: 420px;
+  background-color: white;
+  margin: 100px auto 0 auto; }
+  main section .perfumImg .imgDesktop {
+    display: flex; }
+    main section .perfumImg .imgDesktop img {
+      width: 280px;
+      height: auto;
+      border-radius: 20px 0 0 20px; }
+  main section .perfumImg .imgMobile {
+    display: none; }
+  main section .textContainer {
+    margin: 30px 0px 0px 30px; }
+    main section .textContainer h2 {
+      color: #6c7289;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      letter-spacing: 5px; }
+    main section .textContainer h1 {
+      color: #1c232b;
+      font-family: 'Fraunces', serif;
+      font-size: 30px;
+      width: 180px;
+      line-height: 28px;
+      margin-top: 20px; }
+    main section .textContainer p {
+      color: #6c7289;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      font-size: 14px;
+      line-height: 20px;
+      width: 230px;
+      margin-top: 24px; }
+    main section .textContainer .prices {
+      display: flex;
+      margin-top: 36px;
+      width: 230px; }
+      main section .textContainer .prices .priceGreen {
+        color: #3c8067;
+        font-family: 'Fraunces', serif;
+        font-weight: 600;
+        font-size: 30px;
+        margin: auto 0px auto 0px; }
+      main section .textContainer .prices .priceGrey {
+        color: #6c7289;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        text-decoration: line-through;
+        margin-left: 10px;
+        margin: auto 0px auto 30px; }
+    main section .textContainer .button {
+      background-color: #3c8067;
+      width: 220px;
+      height: 40px;
+      border-radius: 10px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main section .textContainer .button img {
+        width: 14px;
+        height: 14px;
+        margin-left: 54px; }
+      main section .textContainer .button p {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        margin: 0px;
+        margin-left: 10px; }
+
+/* =-=-=- MEDIA QUERIES -=-=-= */
+@media (min-width: 100px) and (max-width: 650px) {
+  main section .perfumImg .imgDesktop {
+    display: none; }
+  main section .perfumImg .imgMobile {
+    display: flex; } }

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,300;9..144,700&family=Montserrat:wght@300;500;700&display=swap');
+@import "utilities/variables", "utilities/mixin";
+// Ajustes generales
+* {margin: 0px;padding: 0px;}
+body {background-color: $Cream;}
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+main {
+    section {
+        display: flex;
+        border-radius: 20px;
+        width: 560px;
+        height: 420px;
+        background-color: $White;
+        margin: 100px auto 0 auto;
+        .perfumImg {
+         .imgDesktop {
+            display: flex;
+            img {
+                width: 280px;
+                height: auto;
+                border-radius: 20px 0 0 20px;
+            }
+         }  
+         .imgMobile {
+            display: none;
+         } 
+        }
+
+        .textContainer {
+            margin: 30px 0px 0px 30px;
+            h2 {
+                color: $Dark-grayish-blue;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 10px;
+                letter-spacing: 5px;
+                
+            }
+            h1 {
+                color: $Very-dark-blue;
+                font-family: 'Fraunces', serif;
+                font-size: 30px;
+                width: 180px;
+                line-height: 28px;
+                margin-top: 20px;
+            }
+            p {
+                color: $Dark-grayish-blue;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 100;
+                font-size: 14px;
+                line-height: 20px;
+                width: 230px;
+                margin-top: 24px;
+            }
+            .prices {
+                display: flex;
+                margin-top: 36px;
+                width: 230px;
+                .priceGreen {
+                    color: $Dark-cyan;
+                    font-family: 'Fraunces', serif;
+                    font-weight: 600;
+                    font-size: 30px;
+                    margin: auto 0px auto 0px;
+                }
+                .priceGrey {
+                    color: $Dark-grayish-blue;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 100;
+                    text-decoration: line-through;
+                    margin-left: 10px;
+                    margin: auto 0px auto 30px;
+                }
+            }
+            .button {
+                background-color: $Dark-cyan;
+                width: 220px;
+                height: 40px;
+                border-radius: 10px;
+                margin-top: 40px;
+                @include display-center;
+                img {
+                    width: 14px;
+                    height: 14px;
+                    margin-left: 54px;
+                }
+                p {
+                    color: $White;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 400;
+                    margin: 0px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* =-=-=- MEDIA QUERIES -=-=-= */
+@media (min-width: 100px) and (max-width: 650px) { 
+    main {
+        section {
+            .perfumImg {
+             .imgDesktop {
+                display: none;
+             }  
+             .imgMobile {
+                display: flex;
+             } 
+            }
+        }
+    }
+}
+
