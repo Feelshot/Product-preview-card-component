@@ -105,13 +105,47 @@ main {
 @media (min-width: 100px) and (max-width: 650px) { 
     main {
         section {
+            flex-direction: column;
+            border-radius: 10px;
+            width: 320px;
+            height: 620px;
+            margin: 30px auto 0 auto;
             .perfumImg {
              .imgDesktop {
                 display: none;
              }  
              .imgMobile {
                 display: flex;
+                img {
+                    width: 320px;
+                    height: auto;
+                    border-radius: 10px 10px 0 0;
+                }
              } 
+            }
+    
+            .textContainer {
+                margin: 30px 0px 0px 20px;
+                h1 {
+                    width: 280px;
+                }
+                p {
+                    width: 284px;
+                }
+                .prices {
+                    width: 230px;
+                }
+                .button {
+                    width: 280px;
+                    border-radius: 8px;
+                    img {
+                        margin-left: 85px;
+                    }
+                    p {
+                        margin: 0px;
+                        margin-left: 10px;
+                    }
+                }
             }
         }
     }
